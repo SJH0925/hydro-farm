@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroGrow - 수경재배 매니저</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="info-toggle" class="hidden-check">
+
+<label for="info-toggle" class="menu-dots">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<aside class="info-sidebar">
+    <label for="info-toggle" class="close-btn">x</label>
+    <h3>📋 주요 영양소 정보</h3>
+    <div class="info-scroll">
+        <div class="info-box">
+            <h4>질소(N)</h4>
+            <p><strong>형태:</strong> NO₃⁻, NH₄⁺</p>
+            <p><strong>역할:</strong> 잎과 줄기 생장 촉진, 단백질·엽록소 합성</p>
+            <p class="warning"><strong>부족 시:</strong> 잎이 노랗게 변하고 성장 정지</p>
+        </div>
+        <div class="info-box">
+            <h4>칼륨(K)</h4>
+            <p><strong>형태:</strong> K⁺</p>
+            <p><strong>역할:</strong> 삼투 조절, 당·전분 이동, 병 저항성 강화</p>
+            <p class="warning"><strong>부족 시:</strong> 잎 가장자리가 마르고 고사</p>
+        </div>
+        <div class="info-box">
+            <h4>칼슘(Ca)</h4>
+            <p><strong>형태:</strong> Ca²⁺</p>
+            <p><strong>역할:</strong> 세포벽 형성, 뿌리 발달, 생리장해 예방</p>
+            <p class="warning"><strong>부족 시:</strong> 어린 잎이 말리고 조직 괴사</p>
+        </div>
+        <div class="info-box">
+            <h4>마그네슘(Mg)</h4>
+            <p><strong>형태:</strong> Mg²⁺</p>
+            <p><strong>역할:</strong> 엽록소 중심 원자, 광합성 필수, 효소 활성화</p>
+            <p class="warning"><strong>부족 시:</strong> 잎맥 사이가 노랗게 변함(황화현상)</p>
+        </div>
+        <div class="info-box">
+            <h4>황(S)</h4>
+            <p><strong>형태:</strong> SO₄²⁻</p>
+            <p><strong>역할:</strong> 아미노산 합성, 단백질 구성</p>
+            <p class="warning"><strong>부족 시:</strong> 잎 전체가 균일하게 노랗게 변함</p>
+        </div>
+        <div class="info-box">
+            <h4>인(P)</h4>
+            <p><strong>형태:</strong> H₂PO₄⁻, HPO₄²⁻</p>
+            <p><strong>역할:</strong> 뿌리 발달, 에너지 대사(ATP), 꽃과 열매 성숙</p>
+            <p class="warning"><strong>부족 시:</strong> 뿌리 성장이 둔화, 잎이 자주빛으로 변색</p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="resource-section">
+            <h4>📺 추천 영상</h4>
+            <a href="https://www.youtube.com/watch?v=7_aozmD2dqI" target="_blank" class="link-card youtube">
+                <span class="icon">▶</span> 수경재배 기초 가이드
+            </a>
+        </div>
+
+        <div class="resource-section">
+            <h4>📰 관련 잡지</h4>
+            <a href="https://rda.go.kr/webzine/2024/09/sub2-6.html" target="_blank" class="link-card news">
+                <span class="icon">📰</span> 수경재배의 모든것
+            </a>
+        </div>
+        </div>
+</aside>
+
+<label for="info-toggle" class="sidebar-overlay"></label>
+
+    <header>
+        <h1>🌿 HydroGrow</h1>
+    </header>
+
+    <input type="radio" name="nav-tab" id="tab-results" checked>
+    <input type="radio" name="nav-tab" id="tab-calc">
+    <input type="radio" name="nav-tab" id="tab-log">
+
+    <nav class="tab-bar">
+        <label for="tab-results" class="tab-item">📖 성장 결과</label>
+        <label for="tab-calc" class="tab-item">🔢 영양액 계산</label>
+        <label for="tab-log" class="tab-item">📝 상태 기록</label>
+    </nav>
+
+    <main>
+        <section class="summary">
+            <div class="card"><h3>재배식물</h3><p>상추</p></div>
+            <div class="card"><h3>재배기간</h3><p>11.25~12.25</p></div>
+        </section>
+
+        <section class="content-section results-view">
+    <h2>🌱 실험 결과 (5종 대조군)</h2>
+    <div class="result-grid">
+        <div class="result-item">
+            <input type="checkbox" id="zoom-1" class="zoom-check">
+            <label for="zoom-1">
+                <img src="물.jpg" alt="물">
+            </label>
+            <div class="zoom-overlay">
+                <label for="zoom-1" class="zoom-close">x</label>
+                <img src="물.jpg" alt="물 크게보기">
+            </div>
+            <h3>1. 물</h3>
+            <p>-</p>
+        </div>
+
+        <div class="result-item">
+            <input type="checkbox" id="zoom-2" class="zoom-check">
+            <label for="zoom-2">
+                <img src="쌀뜨물.jpg" alt="쌀뜨물">
+            </label>
+            <div class="zoom-overlay">
+                <label for="zoom-2" class="zoom-close">x</label>
+                <img src="쌀뜨물.jpg" alt="쌀뜨물 크게보기">
+            </div>
+            <h3>2. 쌀뜨물</h3>
+            <p>-물이 탁해서 빛을 잘 받지 못해 뿌리가 시듦</p>
+        </div>
+
+        <div class="result-item">
+            <input type="checkbox" id="zoom-3" class="zoom-check">
+            <label for="zoom-3">
+                <img src="바나나껍질,커피콩.jpg" alt="바나나">
+            </label>
+            <div class="zoom-overlay">
+                <label for="zoom-3" class="zoom-close">x</label>
+                <img src="바나나껍질,커피콩.jpg" alt="바나나 크게보기">
+            </div>
+            <h3>3. 바나나+커피</h3>
+            <p>-</p>
+        </div>
+
+        <div class="result-item">
+            <input type="checkbox" id="zoom-4" class="zoom-check">
+            <label for="zoom-4">
+                <img src="달걀껍질.jpg" alt="달걀">
+            </label>
+            <div class="zoom-overlay">
+                <label for="zoom-4" class="zoom-close">x</label>
+                <img src="달걀껍질.jpg" alt="달걀 크게보기">
+            </div>
+            <h3>4. 달걀껍질</h3>
+            <p>-잎 개수가 가장 많음</p>
+        </div>
+
+        <div class="result-item highlight">
+            <input type="checkbox" id="zoom-5" class="zoom-check">
+            <label for="zoom-5">
+                <img src="시중영양제.jpg" alt="영양제">
+            </label>
+            <div class="zoom-overlay">
+                <label for="zoom-5" class="zoom-close">x</label>
+                <img src="시중영양제.jpg" alt="영양제 크게보기">
+            </div>
+            <h3>5. 시중 영양제</h3>
+            <p>-잎이 가장 탄탄함</p>
+        </div>
+    </div>
+</section>
+<section class="content-section log-view">
+    <h2>📝 상태 기록 일지</h2>
+    
+    <div class="log-container">
+        <form class="log-form">
+            <div class="capture-branding">🌿 HydroGrow 식물 성장 일지</div>
+            
+            <div class="input-group">
+                <label>📅 측정 날짜</label>
+                <input type="date" id="log-date" required>
+            </div>
+            
+            <div class="input-row">
+                <div class="input-group">
+                    <label>📏 키 (cm)</label>
+                    <input type="number" step="0.1" placeholder="예: 12.5" required>
+                </div>
+                <div class="input-group">
+                    <label>🍃 잎 개수</label>
+                    <input type="number" placeholder="예: 5" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>🖋️ 특이사항</label>
+                <textarea placeholder="식물의 상태나 특이사항을 입력하세요 (예: 잎 끝이 마름, 새순이 돋음 등)"></textarea>
+            </div>
+
+            <div class="capture-notice">
+                <p>✨ 기록 작성을 완료하셨나요?</p>
+                <p class="highlight-text">* 위 화면을 캡처하여 저장하세요 *</p>
+                <p class="tip-text">(PC: Win + Shift + S / 모바일: 화면 캡처 기능)</p>
+            </div>
+        </form>
+    </div>
+</section>
+    </main>
+</body>
+</html>
