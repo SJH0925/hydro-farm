@@ -319,3 +319,109 @@ button { background: var(--main-green); color: white; font-weight: bold; border:
     border: 1px solid #e0e0e0 !important;
     background-color: #fff !important;
 }
+
+/* --- 영양액 배합표 섹션 스타일 --- */
+.calc-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+}
+
+.calc-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.calc-card h3 {
+    color: var(--dark-green);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.guide-text {
+    font-size: 0.85rem;
+    color: #e67e22; /* 주의를 끄는 오렌지색 */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* 테이블 디자인 */
+.calc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 12px;
+    overflow: hidden; /* 테두리 둥글게 */
+    border: 1px solid #eee;
+}
+
+.calc-table th {
+    background-color: #f8fcf9;
+    color: #555;
+    font-weight: 600;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    border-bottom: 2px solid var(--main-green);
+}
+
+.calc-table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.calc-table tr:last-child td {
+    border-bottom: none;
+}
+
+.calc-table strong {
+    color: var(--main-green);
+}
+
+/* 하단 팁 알림창 */
+.info-alert {
+    background-color: #f0f7ff; /* 연한 파란색 배경 */
+    border-left: 5px solid #3498db;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+}
+
+.info-alert h4 {
+    color: #2980b9;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+.info-alert ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-alert li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.info-alert li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.info-alert strong {
+    color: #333;
+}

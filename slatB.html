@@ -87,7 +87,7 @@
 
     <nav class="tab-bar">
         <label for="tab-results" class="tab-item">📖 성장 결과</label>
-        <label for="tab-calc" class="tab-item">🔢 영양액 계산</label>
+        <label for="tab-calc" class="tab-item">🔢 영양액 배합표</label>
         <label for="tab-log" class="tab-item">📝 상태 기록</label>
     </nav>
 
@@ -98,7 +98,7 @@
         </section>
 
         <section class="content-section results-view">
-    <h2>🌱 실험 결과 (5종 대조군)</h2>
+    <h2>🌱 실험 결과 (4종 비교군)</h2>
     <div class="result-grid">
         <div class="result-item">
             <input type="checkbox" id="zoom-1" class="zoom-check">
@@ -110,7 +110,7 @@
                 <img src="물.jpg" alt="물 크게보기">
             </div>
             <h3>1. 물</h3>
-            <p>-</p>
+            <p>-대조군</p>
         </div>
 
         <div class="result-item">
@@ -165,8 +165,8 @@
             <p>-잎이 가장 생기있고 탄탄함</p>
         </div>
     </div>
-</section>
-<section class="content-section log-view">
+        </section>
+        <section class="content-section log-view">
     <h2>📝 상태 기록 일지</h2>
     
     <div class="log-container">
@@ -201,7 +201,54 @@
             </div>
         </form>
     </div>
-</section>
+        </section>
+        <section class="content-section calc-view">
+    <h2>🧪 천연 영양액 최적 배합표</h2>
+    
+    <div class="calc-container">
+        <div class="calc-card">
+            <h3>💧 물 100ml당 영양액 투입량 (희석 기준)</h3>
+            <p class="guide-text">※ 아래 수치는 원액이 아닌, '추출액'을 물 100ml에 섞는 양입니다.</p>
+            
+            <table class="calc-table">
+                <thead>
+                    <tr>
+                        <th>영양제 종류</th>
+                        <th>배합량 (물 100ml당)</th>
+                        <th>주요 효과</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>쌀뜨물</strong></td>
+                        <td>25ml ~ 33ml</td>
+                        <td>비타민 B, 인산(초기 성장)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>바나나껍질 + 커피콩</strong></td>
+                        <td>20ml ~ 25ml</td>
+                        <td>칼륨(뿌리 강화), 질소 공급</td>
+                    </tr>
+                    <tr>
+                        <td><strong>달걀껍질</strong></td>
+                        <td>25ml ~ 30ml</td>
+                        <td>칼슘(세포벽 강화, 팁번 방지)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="info-alert">
+            <h4>💡 제조 및 사용 팁</h4>
+            <ul>
+                <li><strong>쌀뜨물:</strong> 첫 번째 씻은 물은 불순물이 많으니 두 번째 물을 사용하세요.</li>
+                <li><strong>바나나껍질+커피콩:</strong> 바나나껍질과 커피콩을 물에 담가 2일 정도 숙성시킨 후 건더기를 걸러낸 액체만 사용하세요.</li>
+                <li><strong>달걀껍질:</strong> 깨끗이 씻어 말린 후 곱게 갈아 뜨거운 물에 우려내어 식힌 물을 사용하세요.</li>
+                <li><strong>주의:</strong> 천연 영양액은 상하기 쉬우므로 1주일마다 물을 전체 교체해주는 것이 좋습니다.</li>
+            </ul>
+        </div>
+    </div>
+    </section>
     </main>
 </body>
 </html>
